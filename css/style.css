@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  max-width: 400px;
+  min-width: 400px;
+  max-height: 700px;
+  min-height: 700px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .display {
+  height: 250px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  border-bottom: 3px solid #ebebeb;
+  flex-direction: column;
+  padding: 10px;
+}
+.container .display .calculation {
+  font-size: 30px;
+  padding-top: 15px;
+}
+
+.container .display .final-result {
+  font-size: 40px;
+}
+.container .keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  height: 390px;
+  /* flex: 1; */
+  padding: 10px;
+  gap: 20px;
+}
+.container .keyboard button {
+  width: calc(80% / 4);
+  height: calc(80% / 5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  font-size: 25px;
+  box-shadow: inset 0px 0px 5px 0px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  border: none;
+}
+
+.container .keyboard button:hover {
+  background-color: rgba(50, 50, 58, 0.233);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+  transform: scale(110%);
+  -webkit-transform: scale(110%);
+  -moz-transform: scale(110%);
+  -ms-transform: scale(110%);
+  -o-transform: scale(110%);
+}
+.container .keyboard #clear,
+#remove,
+#percent,
+#division,
+#multiplication,
+#minus,
+#plus {
+  color: #ff5200d9;
+}
+
+.container .keyboard #equal {
+  background-color: #ff5200d9;
+  color: white;
+}
